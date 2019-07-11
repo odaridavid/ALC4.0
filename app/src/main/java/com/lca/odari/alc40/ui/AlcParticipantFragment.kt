@@ -1,4 +1,4 @@
-package com.lca.odari.alc40
+package com.lca.odari.alc40.ui
 
 
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.lca.odari.alc40.R
 
 
 class AlcParticipantFragment : Fragment() {
