@@ -1,9 +1,23 @@
 <resources>
-    <string name="app_name">ALC 4.0</string>
+    <string name="app_name" translatable="false">ALC 4.0</string>
     <string name="welcome_message">Welcome To ALC 4.0</string>
+
+    <!--Button text-->
     <string name="about_alc">About ALC</string>
     <string name="my_profile">My Profile</string>
+
+    <!--Fragment titles-->
     <string name="label_home_fragment">ALC 4.0</string>
     <string name="label_profile_fragment">My Profile</string>
     <string name="label_about_alc_fragment">About ALC</string>
+
+    <string name="cd_participant_image">Participant image</string>
+
+    <!--Participant details-->
+    <string name="name" translatable="false">David Odari</string>
+    <string name="track" translatable="false">Android</string>
+    <string name="country" translatable="false">Kenya</string>
+    <string name="email" translatable="false">davidkibzodari@gmail.com</string>
+    <string name="phone" translatable="false">+254717455945</string>
+    <string name="username" translatable="false">David Odari</string>
 </resources>

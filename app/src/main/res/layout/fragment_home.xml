@@ -40,7 +40,8 @@
             android:minWidth="@dimen/min_button_width"
             style="@style/DefaultButtonStyle"
             android:text="@string/about_alc"
-            app:layout_constraintTop_toBottomOf="@+id/guideline_middle" android:fontFamily="@font/libre_franklin"/>
+            app:layout_constraintTop_toBottomOf="@+id/guideline_middle"
+            android:fontFamily="@font/libre_franklin"/>
 
     <com.google.android.material.button.MaterialButton
             android:id="@+id/my_profile_button"
@@ -55,6 +56,7 @@
             app:icon="@drawable/ic_account"
             app:iconTint="?colorOnSecondary"
             android:text="@string/my_profile"
-            app:layout_constraintTop_toBottomOf="@+id/about_alc_button" android:fontFamily="@font/libre_franklin"/>
+            app:layout_constraintTop_toBottomOf="@+id/about_alc_button"
+            android:fontFamily="@font/libre_franklin"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
