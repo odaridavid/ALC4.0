@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
             app:startDestination="@id/homeFragment">
 
-    <fragment android:id="@+id/homeFragment" android:name="com.lca.odari.alc40.ui.HomeFragment"
-              android:label="fragment_home" tools:layout="@layout/fragment_home">
+    <fragment android:id="@+id/homeFragment"
+              android:name="com.lca.odari.alc40.ui.HomeFragment"
+              android:label="@string/label_home_fragment"
+              tools:layout="@layout/fragment_home">
+
         <action android:id="@+id/action_homeFragment_to_alcParticipantFragment"
-                app:destination="@id/alcParticipantFragment" app:enterAnim="@anim/slide_in_right"
-                app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left"
+                app:destination="@id/alcParticipantFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
                 app:popExitAnim="@anim/slide_out_right"/>
-        <action android:id="@+id/action_homeFragment_to_alcViewFragment" app:destination="@id/alcViewFragment"
-                app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
-                app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+
+        <action android:id="@+id/action_homeFragment_to_alcViewFragment"
+                app:destination="@id/alcViewFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+
     </fragment>
-    <fragment android:id="@+id/alcParticipantFragment" android:name="com.lca.odari.alc40.ui.AlcParticipantFragment"
-              android:label="fragment_alc_participant" tools:layout="@layout/fragment_alc_participant"/>
-    <fragment android:id="@+id/alcViewFragment" android:name="com.lca.odari.alc40.ui.AlcViewFragment"
-              android:label="fragment_alc_view" tools:layout="@layout/fragment_alc_view"/>
+
+    <fragment android:id="@+id/alcParticipantFragment"
+              android:name="com.lca.odari.alc40.ui.AlcParticipantFragment"
+              android:label="@string/label_profile_fragment"
+              tools:layout="@layout/fragment_alc_participant"/>
+
+    <fragment android:id="@+id/alcViewFragment"
+              android:name="com.lca.odari.alc40.ui.AlcViewFragment"
+              android:label="@string/label_about_alc_fragment"
+              tools:layout="@layout/fragment_alc_view"/>
 </navigation>

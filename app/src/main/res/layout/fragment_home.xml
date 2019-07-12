@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".ui.HomeFragment">
-</FrameLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.HomeFragment">
+
+    <TextView
+            android:id="@+id/welcome_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:textAlignment="center"
+            android:text="@string/welcome_message"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/libre_franklin_medium"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="150dp"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/about_alc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/default_margin"
+            app:icon="@drawable/ic_info_outline"
+            app:iconTint="?colorOnSecondary"
+            app:iconPadding="@dimen/icon_padding_btn"
+            android:minWidth="@dimen/min_button_width"
+            style="@style/DefaultButtonStyle"
+            android:text="@string/about_alc"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_middle" android:fontFamily="@font/libre_franklin"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/my_profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:minWidth="@dimen/min_button_width"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/default_margin"
+            style="@style/DefaultButtonStyle"
+            app:iconPadding="@dimen/icon_padding_btn"
+            app:icon="@drawable/ic_account"
+            app:iconTint="?colorOnSecondary"
+            android:text="@string/my_profile"
+            app:layout_constraintTop_toBottomOf="@+id/about_alc_button" android:fontFamily="@font/libre_franklin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

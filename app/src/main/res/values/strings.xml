@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ALC 4.0</string>
     <string name="welcome_message">Welcome To ALC 4.0</string>
+    <string name="about_alc">About ALC</string>
+    <string name="my_profile">My Profile</string>
+    <string name="label_home_fragment">ALC 4.0</string>
+    <string name="label_profile_fragment">My Profile</string>
+    <string name="label_about_alc_fragment">About ALC</string>
 </resources>
