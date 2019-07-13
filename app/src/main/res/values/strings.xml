@@ -20,4 +20,26 @@
     <string name="email" translatable="false">davidkibzodari@gmail.com</string>
     <string name="phone" translatable="false">+254717455945</string>
     <string name="username" translatable="false">David Odari</string>
+    <string name="image" translatable="false">https://photos.app.goo.gl/BRo4H8dMtqibtqKg6</string>
+
+    <string name="label_track">
+        <b>Track :</b>
+        %s
+    </string>
+    <string name="label_country">
+        <b>Country :</b>
+        %s
+    </string>
+    <string name="label_email">
+        <b>Email :</b>
+        %s
+    </string>
+    <string name="label_phone">
+        <b>Phone Number :</b>
+        %s
+    </string>
+    <string name="label_username">
+        <b>Username :</b> /@%s
+    </string>
+
 </resources>

@@ -25,7 +25,7 @@ class AlcParticipantFragment : Fragment() {
             getString(R.string.email),
             getString(R.string.phone),
             getString(R.string.username),
-            ""
+            "https://i.ibb.co/xm4RWTs/profile-Hackathon.jpg"
         )
         return binding.root
     }
