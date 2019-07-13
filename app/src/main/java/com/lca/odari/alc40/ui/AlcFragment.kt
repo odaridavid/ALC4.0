@@ -37,7 +37,7 @@ class AlcViewFragment : Fragment() {
                 handler?.proceed()
             }
         }
-        view.webview.loadUrl("http://andela.com/alc/")
+        view.webview.loadUrl("https://andela.com/alc/")
         return view
     }
 
