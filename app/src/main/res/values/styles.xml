@@ -4,5 +4,8 @@
         <item name="android:backgroundTint">?colorSecondary</item>
         <item name="android:textColor">?colorOnSecondary</item>
     </style>
-
+    <style name="SpacedText">
+        <item name="android:layout_margin">@dimen/default_margin</item>
+        <item name="android:padding">@dimen/text_padding</item>
+    </style>
 </resources>

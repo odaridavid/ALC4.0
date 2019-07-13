@@ -19,7 +19,7 @@
                     android:id="@+id/profile_pic_image_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:minHeight="100dp"
+                    android:minHeight="@dimen/image_view_min_height"
                     app:layout_constraintTop_toTopOf="parent"
                     android:scaleType="centerCrop"
                     app:loadImage="@{Participant.imageLink}"
@@ -34,8 +34,7 @@
                     tools:text="David Odari"
                     android:textAlignment="center"
                     android:text="@{Participant.name}"
-                    android:padding="@dimen/text_padding"
-                    android:layout_margin="@dimen/default_margin"
+                    style="@style/SpacedText"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
 
             <View
@@ -52,8 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@{String.format(@string/label_track,Participant.track)}"
-                    android:padding="@dimen/text_padding"
-                    android:layout_margin="@dimen/default_margin"
+                    style="@style/SpacedText"
                     tools:text="Track : Android"/>
 
             <TextView
@@ -62,8 +60,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/participant_track_text_view"
                     android:text="@{String.format(@string/label_country,Participant.country)}"
-                    android:layout_margin="@dimen/default_margin"
-                    android:padding="@dimen/text_padding"
+                    style="@style/SpacedText"
                     tools:text="Country : Kenya"/>
 
             <TextView
@@ -72,8 +69,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/participant_country_text_view"
                     android:text="@{String.format(@string/label_phone,Participant.phoneNumber)}"
-                    android:padding="@dimen/text_padding"
-                    android:layout_margin="@dimen/default_margin"
+                    style="@style/SpacedText"
                     tools:text="Phone Number : +254717455945"/>
 
             <TextView
@@ -82,8 +78,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/participant_telno_text_view"
                     android:text="@{String.format(@string/label_email,Participant.email)}"
-                    android:layout_margin="@dimen/default_margin"
-                    android:padding="@dimen/text_padding"
+                    style="@style/SpacedText"
                     tools:text="Email : davidodari@gmail.com"/>
 
             <TextView
@@ -92,8 +87,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/participant_email_text_view"
                     android:text="@{String.format(@string/label_username,Participant.username)}"
-                    android:layout_margin="@dimen/default_margin"
-                    android:padding="@dimen/text_padding"
+                    style="@style/SpacedText"
                     tools:text="Slack Username : @DavidOdari"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
