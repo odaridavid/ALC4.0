@@ -41,5 +41,6 @@
     <string name="label_username">
         <b>Username :</b> /@%s
     </string>
+    <string name="alc_link">https://andela.com/alc/</string>
 
 </resources>
